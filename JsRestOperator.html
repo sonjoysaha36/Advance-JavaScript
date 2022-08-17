@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function info(name, ...args){
+            document.write(`Hello ${name} <br> your marks :`);
+            let sum =0;
+            for (let i in args){
+                sum +=args[i];
+            }
+            document.write(sum);
+
+        }
+        info("Sonjoy Saha",10,20,30,40);
+    </script>
+</body>
+</html>
