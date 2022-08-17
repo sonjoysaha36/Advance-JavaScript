@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //normal function
+        let Welcome = function(name){
+            return `Welcome ${name}`;
+        }
+        console.log(Welcome("Sonjoy Saha"));
+
+        //using arrow function
+        let show = (name) => {
+            return `Welcome ${name}`
+        }
+        console.log(show("Priya"));
+
+        //using multiple Parameters
+        let multi = (name, age) => {
+            return `Welcome ${name} age is ${age}`;
+        }
+        document.write(multi("Sonjoy Saha", 23));
+    </script>
+</body>
+</html>
