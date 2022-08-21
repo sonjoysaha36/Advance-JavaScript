@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            // using constructor
+            constructor(){
+                let name;
+                console.log("constructor Function");
+            }
+            //using prototype method
+            hello(){
+                console.log("Hello " + this.name)
+            }
+        }
+        let a = new student();
+        a.name = "Sonjoy Saha";
+        a.hello();
+    </script>
+</body>
+</html>

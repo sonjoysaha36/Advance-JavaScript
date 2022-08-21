@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(name, age){
+                this.stuName = name;
+                this.stuAge =age;
+                console.log("constructor Function");
+                
+            }
+            hello(){
+                document.write(`Hello ${this.stuName} your age is ${this.stuAge} <br>`);
+            }
+
+            static staticMethod(){
+                console.log("Static Function");
+            }
+        }
+        let a = new student("Sonjoy Saha", 24);
+        let b = new student("Priya Saha", 20);
+        a.hello();
+        b.hello();
+        //no need to use object
+        student.staticMethod();
+    </script>
+</body>
+</html>
