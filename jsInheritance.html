@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class employee{
+            constructor(name){
+                this.empname = name;
+                console.log("Constructor called");
+            }
+
+            info(){
+                console.log("Employee name : " +this.empname);
+            }
+        }
+
+        class manager extends employee{
+            info(){
+                //using super for info method
+                super.info();
+                console.log("Manager Name : " +this.empname);
+            }
+        }
+        let a = new manager("Sonjoy Saha");
+        a.info();
+
+    </script>
+</body>
+</html>
