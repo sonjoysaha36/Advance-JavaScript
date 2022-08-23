@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function prom(complete){
+            return new Promise(function(reolve, reject){
+                console.log("Fetching data, please wait .");
+                //using settimeout function and 1000 is mili second that mince function work  minute later 
+                setTimeout(() =>{
+                    if (complete){
+                    reolve("i am successfull");
+                }
+                else{
+                    reject("i am failed");
+                }
+                }, 1000)
+            });
+        }
+
+        // arrow function for condition fulfill
+
+        let onfulfilment = (result) =>{
+            console.log(result);
+        }
+        //arrow function for condition not fullfill
+        let onRejection = (error) =>{
+            console.log(error);
+        }
+        //callback function
+        //if value is true then call (then) function and if value is false then call catch function
+
+        prom(true).then(onfulfilment).catch(onRejection);
+        
+    </script>
+</body>
+</html>
