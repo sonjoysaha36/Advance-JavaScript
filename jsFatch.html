@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("content/readme.txt").then((Response)=>{
+            return Response.text();
+        })
+        .then((data)=>{
+            document.write(data);
+        });
+
+        //we can short this code like
+        // fetch("content/readme.txt")
+        // .then(response => response.text())
+        // .then(data => document.write(data));
+
+    </script>
+    
+</body>
+</html>
