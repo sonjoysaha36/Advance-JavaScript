@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Sonjoy Saha",
+        "age" : "24",
+        "city": "Dhaka" 
+    },
+    {
+        "name": "Priya Saha",
+        "age" : "22",
+        "city": "Mymensingh" 
+    },
+    {
+        "name": "MIshuk Saha",
+        "age" : "23",
+        "city": "Dhaka" 
+    }
+
+]
