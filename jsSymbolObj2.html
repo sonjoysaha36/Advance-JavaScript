@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //we can not find symbol key in for in loop 
+        let age = Symbol("age");
+        let user ={
+            name : 'Sonjoy Saha',
+            gender : "Male",
+            sub : 'CSE'
+            
+        };
+        //we can also using symbol variable to object this process
+        user[age] = 24;
+        
+        console.log(user);
+        // for(let key in user){
+        //     console.log(key);
+        // }
+        // console.log(user.age)
+        //convert to JSON
+        console.log(JSON.stringify(user));
+    </script>
+</body>
+</html>
