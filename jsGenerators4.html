@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function *generate(){
+            yield 143;
+            //when we use 8 in array then its return single single value
+            yield* ["Sonjoy", "love", "Priya"];
+        }
+        let g = generate();
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        //this is return undefine because there are total 4 values
+        console.log(g.next().value);
+        
+    </script>
+</body>
+</html>
