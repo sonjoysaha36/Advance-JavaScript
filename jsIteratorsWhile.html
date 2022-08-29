@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [100, 200, 300, 400, 500];
+        let itr = number[Symbol.iterator]();
+        let result = itr.next();
+
+        console.log(result);
+        //return two variable done and value.
+        // using while loop for print all value
+        while(!result.done){
+            console.log(result.value);
+            result = itr.next();
+        }
+    </script>
+</body>
+</html>
