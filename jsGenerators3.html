@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function *generate(){
+            let nextNum = 300;
+            while(true){
+                yield(nextNum++);
+            }
+        }
+
+        let g = generate();
+        //print value using loop
+      for(let value of g){
+          //when we get 311 then its break 
+          if(value > 310) break;
+          console.log(value);
+      }
+        
+    </script>
+</body>
+</html>
